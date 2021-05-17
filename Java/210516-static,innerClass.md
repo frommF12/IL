@@ -33,3 +33,77 @@ public class Test {
 ---
 
 ## innerClass
+
+내부클래스는 변수처럼 인스턴스, static, 지역클래스로 나뉘며 유효범위(scope)와 접근성(accessibility)를 갖는다.  
+인스턴스 클래스는 외부 클래스의 멤버들을 전부 접근할 수 있다.  
+static 클래스는 static 멤버와 static 메서드에만 접근할 수 있다.
+지역클래스는 외부에서 접근할 수 없다. 
+```
+public class Test {
+	int instanceValue = 1;
+	static int staticValue = 2;
+	final int finalValue = 3;
+	static final int staticFinalValue = 4;
+	
+	void testPrint() {
+		System.out.println("외부클래스의 인스턴스 메서드");
+	}
+	class InstanceClass {
+		int a = instanceValue;
+		int b = staticValue;
+		int c = finalValue;
+		int d = staticFinalValue; // static 과 final이 동시에 붙으면 가능하다. (지역클래스도 동일)
+//		// 인스턴스 클래스의 멤버로 static을 갖지 못한다.
+//		static int e = staticValue;
+//		static void print2() {}
+		void print() {
+			System.out.println(a + " "+ b + " " + c + " " + d);
+			testPrint();
+		}
+	}
+	
+	static class StaticClass {
+//		static class에서 instance 접근불가
+//		int a = instanceValue;
+		int b = staticValue;
+//		finalValue도 인스턴스 변수이기 때문에 접근불가
+//		int c = finalValue;
+		int d = staticFinalValue;
+		void print() {
+			System.out.println(b +" "+ d);
+//			testPrint(); 오류 발생, static 메서드에만 접근이 가능하다.
+		}
+	}
+	
+	void method() {
+		int localValue = 5;
+		final int flocalValue = 6;
+		class LocalClass {
+			int a = instanceValue;
+			int b = staticValue;
+			int c = finalValue;
+			int d = staticFinalValue;
+			int e = localValue;
+			int f = flocalValue;
+//			// 지역클래스도 static 멤버를 갖지 못한다.
+//			static int g = staticValue;
+//			static void print2() {}
+			void print() {
+				System.out.println(a + " "+ b + " "+ c + " " + d +" "+ e + " " + f);
+				testPrint();
+			}
+		}
+		LocalClass methodLocal = new LocalClass();
+		methodLocal.print();
+		
+	}
+	public static void main(String[] args) {
+		Test test = new Test();
+		InstanceClass testInstance = test.new InstanceClass();
+		StaticClass testStatic = new StaticClass();
+		testInstance.print();
+		testStatic.print();
+		test.method();
+	}
+}
+```
