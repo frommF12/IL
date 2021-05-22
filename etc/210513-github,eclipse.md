@@ -11,6 +11,7 @@ prefernces -> java -> installed JRES -> jdk 경로로 지정후 선택
 2. 인코딩 변경
 `MS949를 사용할 경우 다른 운영체제에서 글자가 깨질 수 있다.`  
 prefernces -> general -> workspace -> encoding
+prefernces -> web -> css files / html files / jsp files -> encoding
 
 * 이클립스 단축키
 1. 한 행 복사 ctrl + alt + 위/아래 방향키
