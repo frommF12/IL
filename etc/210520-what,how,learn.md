@@ -22,17 +22,17 @@
 
 자바의 핵심 개념 (OOP, 람다, 스트림, 등등 기본 개념도 확실히)    
 
+네트워크 (TCP/IP , HTTP), 데이터베이스
+
 자바 유틸리티 도구(Maven, git)  
 
-웹에 관한 전반적인 것들 (인터넷 동작원리, HTTP, DNS 등)  
-
-FE(HTML, CSS, Javascript, DOM, 프레임워크)  
+HTML,CSS,Javascript(프레임워크), 브라우저 렌더링
 
 Servlet, JSP, JDBC, Linux, Spring  
 
 컴퓨터공학 (네트워크, 자료구조, 알고리즘) 등등...  
 
-추후에 더 내용을 넣겠다.
+인터넷을 보며 공부할 것들을 추가하겠다!
 
 
 
