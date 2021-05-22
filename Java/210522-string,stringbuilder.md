@@ -21,14 +21,14 @@ String은 불변이다. 리터럴이 같을 때 공유하기 때문에 만약 �
 
 그래서 String을 조작하면 기존의 값이 바뀌는 게 아니라 새로운 String을 만든다. (ex. str1 + str2)  
 
-
+---
 ### StringBuilder / StringBuffer
 
 StringBuilder는 String과 String을 더할 때 새로운 객체를 만드는 것이 아니라 기존의 데이터에 더하는 방식을 사용한다.  
 
 그래서 String 객체에 비해 속도도 빠르며 부하가 적다.  
 
-StringBuilder.apped() 메서드에 더하고 싶은 문자열을 인자로 주면 기존의 문자열에 인자값이 더해진다.  
+StringBuilder.append() 메서드에 더하고 싶은 문자열을 인자로 주면 기존의 문자열에 인자값이 더해진다.  
 
 StringBuilder와 StringBuffer의 차이점은 동기화 유무이다.  
 
