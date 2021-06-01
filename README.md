@@ -5,4 +5,4 @@
 
 ### 자바
 
-  * Java/210524-class,instance.md
+  * https://github.com/frommF12/TIL/blob/02f60968645e143f3efa2730bb52f342a5dfc65b/Java/210524-class,instance.md
