@@ -1,7 +1,7 @@
 
 ## eqauls 와 hashcode
 
-이 부분은 https://jisooo.tistory.com/entry/java-hashcode%EC%99%80-equals-%EB%A9%94%EC%84%9C%EB%93%9C%EB%8A%94-%EC%96%B8%EC%A0%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0-%EC%99%9C-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C 블로그를 참고하고 쓰는 내용이다.  
+https://jisooo.tistory.com/entry/java-hashcode%EC%99%80-equals-%EB%A9%94%EC%84%9C%EB%93%9C%EB%8A%94-%EC%96%B8%EC%A0%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B3%A0-%EC%99%9C-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C 블로그를 참고하고 쓰는 내용이다.  
 
 equals와 hashcode는 Object class에 정의되어 있어 모든 객체는 이 둘을 상속받는다.  
 **equals**는 ==와 비슷해보이나 내부적으로는 전혀 다르다.  
@@ -49,7 +49,6 @@ public static boolean equals(byte[] value, byte[] other) {
 **hashcode**는 객체의 주소번지를 이용해서 해시값을 만들어 리턴한다.  
 equals와 hashcode는 HashTable, HashMap, HashSet에서 키값이 중복되는 걸 방지하기 위해서 사용된다.  
 
-* 이 내용도 위의 블로그를 보고 작성하는 것이다  
  
 HashTable에서는 hash값을 버킷에 저장하는데 **해시충돌**(hash값이 같은 경우) 일어나면 버킷에 해당 객체를 LinkedList형태로 추가한다.   
 
@@ -63,17 +62,6 @@ HashTable에서는 hash값을 버킷에 저장하는데 **해시충돌**(hash값
 따라서 역시 원하는 객체를 찾을 수 없다.  
 이러한 이유로 객체의 정확한 동등 비교를 위해서는 (특히 Hash 관련 컬렉션 프레임워크를 사용할때!) Object의 equals() 메소드만 재정의하지 말고 
 hashCode()메소드도 재정의해서 논리적 동등 객체일경우 동일한 해시코드가 리턴되도록 해야한다.
-
-
-## Component.setPreferrerdSize() 와 setSize()
-
-컴포넌트의 크기를 결정할 때 setSize와 setPreferredSize를 사용할 수 있는데 두 개의 차이점이 궁금해서 구글링을 해봤다. 
-
-https://stackoverflow.com/questions/1783793/java-difference-between-the-setpreferredsize-and-setsize-methods-in-compone  
-
-setSize는 레이아웃 관리자가 없을 때  
-
-setPreferreredSize는 레이아웃 관리자가 있을 때 사용한다고 보면 된다. 레이아웃 관리자가 있을 때 setSize를 사용해도 변경되지 않는다.  
 
 
 
