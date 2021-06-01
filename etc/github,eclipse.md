@@ -1,6 +1,4 @@
-# today-i-learn
 
-## 05/13
 * markdown  
 
 간단하고 편리함!
@@ -18,6 +16,7 @@ prefernces -> web -> css files / html files / jsp files -> encoding
 2. 한 행 삭제 crrl + d
 3. 블럭단위 주석처리 원하는 코드 드래그 후 ctrl + / ※ 키보드 입력기가 한컴 입력기면 안됨
 4. 자동코드정렬 ctrl + shift + f
+5. 변수의 이름을 한번에 변환 alt + shift + r
 
 * eclipse - github 연동  
 프로젝트 우클릭 team -> share project 로컬저장소 생성(프로젝트에 물음표가 붙음)  
