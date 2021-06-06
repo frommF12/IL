@@ -13,12 +13,15 @@
 
 ### 자바
 
-- [클래스](Java/class,instance.md)
-- [내부클래스와 스태틱](Java/static,innerClass.md)
-- [오버라이딩](Java/overriding.md)
-- [String](Java/string,stringbuilder.md)
-- [equals,hashcode](Java/equals,hashcode.md)
-- [FileI/O](Java/FileIO.md)
+- [기초]
+- [객체지향](Java/class,instance.md)
+- [컬렉션프레임워크]
+- [문자열](Java/string,stringbuilder.md)
+- [파일입출력](Java/FileIO.md)
+- [예외처리]
+- [스레드]
+- [자바8기능]
+- [IDE사용]
 
 
 ### 웹
