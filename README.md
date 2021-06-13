@@ -15,7 +15,7 @@
 
 - [기초]
 - [객체지향](Java/객체지향.md)
-- [컬렉션프레임워크]
+- [컬렉션프레임워크](Java/컬렉션프레임워크.md)
 - [문자열](Java/string,stringbuilder.md)
 - [파일입출력](Java/FileIO.md)
 - [예외처리]
